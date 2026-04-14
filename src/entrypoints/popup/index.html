@@ -7,8 +7,22 @@
     <meta name="manifest.type" content="browser_action" />
   </head>
   <body>
-    Hello World
-    <div id="app"></div>
+    <div id="app">
+      <h1>SILENCE FROM YOU <span class="twitch-color">TWITCH.TV!</span></h1>
+      <div>
+        <p style="font-size:120%;"><strong>About:</strong> This extension periodically checks twitch.tv pages for video ad content.
+          If it appears that a video ad is playing, the tab is automatically muted.
+          If the tab was auto-muted by this extension and no video ad elements are found:
+          the tab is automatically unmuted.
+        </p>
+        <p style="font-size:120%;">
+          This extension does not collect or transmit any data.
+        </p>
+      </div>
+      <div>
+        <a style="font-size:170%;" href="#">Donate</a>
+      </div>
+    </div>
     <script type="module" src="./main.ts"></script>
   </body>
 </html>
